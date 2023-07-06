@@ -1,6 +1,7 @@
+import styles from '../styles/Navbar.module.scss'
 const Navbar= () => {
     return (
-        <div>
+        <div className={styles.container}>
             <button>Om meg</button>
             <button>Ferdigheter</button>
             <button>Prosjekter</button>

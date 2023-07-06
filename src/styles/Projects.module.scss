@@ -1,0 +1,15 @@
+.container{
+    
+    .container_box{
+        display: flex;
+        flex-direction: column;
+    
+
+        .containerEl{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 4rem;
+        }
+    }
+}

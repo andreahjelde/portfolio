@@ -6,6 +6,7 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import Typewriter from "./Components/Typewriter"
 
 
 
@@ -17,6 +18,7 @@ function App() {
       </header>
 
       <main className={"main"}>
+        <Typewriter />
         <About />
         <Skills />
         <Projects />
