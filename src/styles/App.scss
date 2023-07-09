@@ -5,26 +5,11 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  background-color: $primary-color;
   
   
   .header{
-    background-color: $primary-color;
     height: 6rem;
-  }
-  .skills{
-    background-color: #E1CFA4;
-  }
-
-  .projects{
-    background-color: #7D8A7B;
-  }
-
-  .contact{
-    background-color: #539794;
-  }
-
-  .footer{
-    background-color: #C66421;
   }
   
 }

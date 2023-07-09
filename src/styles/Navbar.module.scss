@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .container{
     display: flex;
     flex-direction: row;
@@ -5,4 +7,14 @@
     justify-content: end;
     align-content: center;
     margin: 2rem;
+
+    .navbarBtn{
+        border-style: none;
+        background: none;
+        font-weight: bold;
+        font-size: 20px;
+        &:hover{
+            color:$fourth-color;
+        }
+    }
 }

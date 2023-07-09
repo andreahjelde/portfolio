@@ -1,8 +1,11 @@
+@import './variables.scss';
+
 .container{
     
     .container_box{
         display: flex;
         flex-direction: column;
+        justify-content: center;
     
 
         .containerEl{
@@ -10,6 +13,10 @@
             flex-direction: row;
             justify-content: center;
             gap: 4rem;
+            background-color: $secundary-color;
+            border-radius: 10%;
+            width: 20rem;
+
         }
     }
 }

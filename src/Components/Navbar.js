@@ -2,10 +2,10 @@ import styles from '../styles/Navbar.module.scss'
 const Navbar= () => {
     return (
         <div className={styles.container}>
-            <button>Om meg</button>
-            <button>Ferdigheter</button>
-            <button>Prosjekter</button>
-            <button>Kontakt</button>
+            <button className={styles.navbarBtn}>Om meg</button>
+            <button className={styles.navbarBtn}>Ferdigheter</button>
+            <button className={styles.navbarBtn}>Prosjekter</button>
+            <button className={styles.navbarBtn}>Kontakt</button>
         </div>
     )
 }

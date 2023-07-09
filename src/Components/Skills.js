@@ -1,7 +1,7 @@
 import styles from '../styles/Skills.module.scss'
 const Skills = () => {
     return (
-        <div>
+        <div className={styles.container}>
             <h1>Mine ferdigheter</h1>
             <div className={styles.containerSkills}>
                 <p>Html</p>
