@@ -16,34 +16,38 @@ const Skills = React.forwardRef((props, ref) => {
             <section className={styles.containerSkills}>
                 <div className={styles.row}>
                     <div className={styles.skillsEl_html}>
-                        <AiFillHtml5 size={30} />
+                        <AiFillHtml5 size={55} />
                         <p>Html</p>
                     </div>
 
                     <div className={styles.skillsEl_css}>
-                        <SiCss3 size={30} />
+                        <SiCss3 size={55} />
                         <p>Css</p>
                     </div>
 
-                    <div className={styles.skillsEl_scss}>
-                        <SiSass size={30}/>
-                        <p>Scss</p>
-                    </div>
+
                 </div>
 
                 <div className={styles.row}>
-                    <div className={styles.skillsEl_javascript}>
-                        <DiJavascript size={30} />
-                        <p>JavaScript</p>
+                    <div className={styles.skillsEl_scss}>
+                        <SiSass size={55}/>
+                        <p>Scss</p>
+                        <div className={styles.skillsEl_javascript}>
+                            <DiJavascript size={55} />
+                            <p>JavaScript</p>
+                        </div>
                     </div>
+                </div>
+                <div className={styles.row}>
+
 
                     <div className={styles.skillsEl_typescript}>
-                        <SiTypescript size={30}/>
+                        <SiTypescript size={55}/>
                         <p>TypeScript</p>
                     </div>
 
                     <div className={styles.skillsEl_react}>
-                        <SiReact size={30}/>
+                        <SiReact size={55}/>
                         <p>React</p>
                     </div>
                 </div>
