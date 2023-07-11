@@ -1,8 +1,9 @@
 import styles from '../styles/Projects.module.scss'
-const Projects = () => {
+import React from "react"
+const Projects = React.forwardRef((props, ref) => {
 
     return (
-        <div className={styles.container}>
+        <div ref={ref} className={styles.container}>
             <h1>Mine prosjekter</h1>
             <section className={styles.container_box}>
                 <div className={styles.containerEl}>
@@ -20,8 +21,8 @@ const Projects = () => {
                 </div>
             </section>
         </div>
-    )
+        )
 
-}
+})
 
 export default Projects;

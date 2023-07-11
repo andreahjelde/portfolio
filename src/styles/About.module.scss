@@ -6,6 +6,7 @@
     .title{
         color: black;
         margin-bottom: 5rem;
+        padding-top: 5rem;
     }
 .ContainerElements{
         display: flex;
@@ -18,14 +19,15 @@
 
     }
 .imagePerson{
-width: 15rem;
-height: 15rem;
+width: 20rem;
+height: 20rem;
 border-radius: 50%;
 object-fit: cover;
     }
 
 .txtAbout{
-        width: 30rem;
+        width: 50rem;
+        line-height: 1.5rem;
     }
 }
 .about{

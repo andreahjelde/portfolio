@@ -1,17 +1,59 @@
 import styles from '../styles/Skills.module.scss'
-const Skills = () => {
+import React from "react"
+import {AiFillHtml5} from "@react-icons/all-files/ai/AiFillHtml5";
+import {SiCss3} from "@react-icons/all-files/si/SiCss3";
+import {SiSass} from "@react-icons/all-files/si/SiSass"
+import {DiJavascript} from "@react-icons/all-files/di/DiJavascript";
+import {SiTypescript} from "@react-icons/all-files/si/SiTypescript";
+import {SiReact} from "@react-icons/all-files/si/SiReact";
+
+
+
+const Skills = React.forwardRef((props, ref) => {
     return (
-        <div className={styles.container}>
+        <div ref={ref} className={styles.container}>
             <h1>Mine ferdigheter</h1>
-            <div className={styles.containerSkills}>
-                <p>Html</p>
-                <p>Css / Scss</p>
-                <p>JavaScript</p>
-                <p>Typewriter</p>
-            </div>
+            <section className={styles.containerSkills}>
+                <div className={styles.row}>
+                    <div className={styles.skillsEl_html}>
+                        <AiFillHtml5 size={30} />
+                        <p>Html</p>
+                    </div>
+
+                    <div className={styles.skillsEl_css}>
+                        <SiCss3 size={30} />
+                        <p>Css</p>
+                    </div>
+
+                    <div className={styles.skillsEl_scss}>
+                        <SiSass size={30}/>
+                        <p>Scss</p>
+                    </div>
+                </div>
+
+                <div className={styles.row}>
+                    <div className={styles.skillsEl_javascript}>
+                        <DiJavascript size={30} />
+                        <p>JavaScript</p>
+                    </div>
+
+                    <div className={styles.skillsEl_typescript}>
+                        <SiTypescript size={30}/>
+                        <p>TypeScript</p>
+                    </div>
+
+                    <div className={styles.skillsEl_react}>
+                        <SiReact size={30}/>
+                        <p>React</p>
+                    </div>
+                </div>
+                <p>Next.js</p>
+
+
+            </section>
 
         </div>
-    )
-}
+        )
+})
 
 export default Skills;

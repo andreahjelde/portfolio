@@ -12,6 +12,14 @@ $fourth-color: #83C2DB;
 $fifth-color: #58A7BB;
 
 
+// Breakpoints
+$breakpoints: (
+    phone: 600px,
+    tablet: 700px,
+    laptop: 1270px,
+    large: 1500px,
+);
+
 
 //#FCFBFB
 //#E49A32

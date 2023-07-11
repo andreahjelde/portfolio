@@ -2,9 +2,33 @@
 
 .container{
     background-color: $secundary-color;
+height: 100vh;
+padding-top: 5rem;
 
+.containerSkills{
+    display: flex;
+    flex: 1;
+.row{
+    .skillsEl_html{
+        height: 100px;
+    }
 
-    .containerSkills{
-  
+        .skillsEl_css{
+        height: 100px;
+    }
+        .skillsEl_scss{
+        height: 100px;
+    }
+}
+
+        .skillsEl_javascript{
+        height: 100px;
+        }
+        .skillsEl_typescript{
+        height: 100px;
+        }
+        .skillsEl_react{
+        height: 100px;
+        }
     }
 }

@@ -1,6 +1,44 @@
+@import './variables.scss';
+
 .container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+
+    .githubBtn{
+        text-decoration: none;
+        color: inherit;
+
+        .githubBtn_el{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items:center;
+            &:hover{
+                fill: $secundary-color;
+                color: $secundary-color;
+                text-decoration:none
+            }
+
+        }
+
+    }
+
+.linkedinBtn{
+        text-decoration: none;
+        color: inherit;
+        .linkedinBtn_el{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items:center;
+            &:hover{
+                fill: $secundary-color;
+                color: $secundary-color;
+                text-decoration:none
+            }
+        }
+
+    }
 }
