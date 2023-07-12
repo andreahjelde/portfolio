@@ -1,20 +1,29 @@
 @import './variables.scss';
 
 .container{
-    padding-top: 5rem;
-    .container_box{
-        display: grid;
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        .containerEl{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 2rem;
-            background-color: $secundary-color;
 
-        }
+    .title1El{
+
     }
+    .titleEl{
+
+    }
+    .bildeProsject{
+        width: 85%;
+
+
+    }
+    .textEl{
+    }
+
+.btnLive{
+
+    }
+
+.btnGithub{}
 }
