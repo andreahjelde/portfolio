@@ -16,8 +16,8 @@
             justify-items: center;
             align-items:center;
             &:hover{
-                fill: $secundary-color;
-                color: $secundary-color;
+                fill: white;
+                color: white;
                 text-decoration:none
             }
 
@@ -34,8 +34,8 @@
             justify-items: center;
             align-items:center;
             &:hover{
-                fill: $secundary-color;
-                color: $secundary-color;
+                fill: white;
+                color: black;
                 text-decoration:none
             }
         }
