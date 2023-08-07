@@ -7,6 +7,7 @@ import Skills from "./Components/Skills";
 import Footer from "./Components/Footer";
 import Typewriter from "./Components/Typewriter"
 import { useRef } from "react";
+import ButtonToTop from "./Components/ButtonToTop";
 
 
 
@@ -25,6 +26,7 @@ function App() {
   };
 
   return (
+
     <div className={"App"}>
       <header className={"header"}>
         <div className={"container_navbar"}>
@@ -36,13 +38,13 @@ function App() {
       </header>
 
       <main className={"main"}>
+        <ButtonToTop />
         <Typewriter />
         <About ref={about}/>
         <Skills ref={skills} />
         <Projects ref={projects} />
         <Contact ref={contact}/>
       </main>
-
 
         <Footer />
 

@@ -7,13 +7,16 @@
 
 
 
+
+$primary-color: #304A83;//mørk blå --> denne har blitt brukt
+$secundary-color: #FCFBFB; //hvit
+$third-color:#000000; //svart
+
+$fourth-color: #83C2DB; //lys blå
+$fifth-color: #58A7BB; //lys men mørk blå
+
+
 /*
-$primary-color: #304A83;
-$secundary-color: #FCFBFB;
-$third-color: #E49A32;
-$fourth-color: #83C2DB;
-$fifth-color: #58A7BB;
-*/
 
 // Breakpoints
 $breakpoints: (
@@ -22,7 +25,7 @@ $breakpoints: (
     laptop: 1270px,
     large: 1500px,
 );
-
+*/
 
 //#FCFBFB
 //#E49A32

@@ -1,29 +1,59 @@
 @import './variables.scss';
 
-.container{
+.mainContainer{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
 
+    .container1{
 
-    .title1El{
+        .title1El{}
+    
+        .titleEl{}
+    
+        .bildeProsject{
+            width: 85%;
+        }
+    
+        .textEl{}
 
+        .btnLive{}
+
+        .btnGithub{}
     }
-    .titleEl{
 
+.container2{
+        .title1El{}
+
+        .titleEl{}
+
+        .bildeProsject{
+            width: 85%;
+        }
+
+        .textEl{}
+
+        .btnLive{}
+
+        .btnGithub{}
     }
-    .bildeProsject{
-        width: 85%;
 
+.container3{
+        .title1El{}
 
+        .titleEl{}
+
+        .bildeProsject{
+            width: 85%;
+        }
+
+        .textEl{}
+
+        .btnLive{}
+
+        .btnGithub{}
     }
-    .textEl{
-    }
-
-.btnLive{
-
-    }
-
-.btnGithub{}
 }

@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+
+.btnGoTopHidden{
+   display: none;
+}
+
+.btnToTop{
+   display: block;
+    border-radius: 50%;
+    background-color: $third-color;
+    color: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    position: fixed;
+    z-index: 1;
+    left: 90%;
+    bottom: 10rem;
+    border-style: none;
+    
+}
+
+.btnToTop:active{background-color: red;}
+
+.btnToTop:hover{background-color: $primary-color;}
+
+   
+
