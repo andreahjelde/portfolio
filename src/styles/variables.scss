@@ -20,11 +20,12 @@ $fifth-color: #58A7BB; //lys men mørk blå
 
 // Breakpoints
 $breakpoints: (
-    phone: 767px,
-    tablet: 1023px,
-    laptop: 1440px,
+    phone: 320px,
+    tablet: 768px,
+    laptop: 1024px,
 );
 
+$app-height: 100%
 
 //#FCFBFB
 //#E49A32

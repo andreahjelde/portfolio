@@ -1,12 +1,12 @@
 @import './variables.scss';
 
 .mainContainer{
+
+    width: 25rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    flex-direction: column;
+    justify-content: center;
+
 
     .container1{
 
@@ -55,5 +55,18 @@
         .btnLive{}
 
         .btnGithub{}
+    }
+
+@media screen and (min-width: map-get($breakpoints, tablet) ) {
+
+            width: 45rem;
+    }
+@media screen and (min-width: map-get($breakpoints, laptop) ) {
+            display: flex;
+            flex-direction: row;
+            width: 60rem;
+            justify-content: space-between;
+            align-content: center;
+
     }
 }

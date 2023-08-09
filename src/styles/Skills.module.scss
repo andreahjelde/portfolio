@@ -1,9 +1,8 @@
 @import './variables.scss';
 
 .container{
-    background-color: white;
-height: 100vh;
-padding-top: 5rem;
+    height: 100vh;
+    padding-top: 5rem;
 
 
     .containerSkills{
@@ -31,6 +30,10 @@ padding-top: 5rem;
                 height: 100px;
             }
 
+            .skillsEl_next{
+                height: 100px;
+            }
+
         }
 
 
@@ -42,7 +45,27 @@ padding-top: 5rem;
             .skillsEl_react{
                 height: 100px;
             }
+
         }
 
     }
+
+    @media screen and (min-width: map-get($breakpoints, phone) ) {
+
+
+    }
+
+    @media screen and (min-width: map-get($breakpoints, tablet) ) {
+
+
+    }
+
+    @media screen and (min-width: map-get($breakpoints, laptop) ) {
+        height: 100vh;
+        padding-top: 5rem;
+
+
+
+    }
+
 }

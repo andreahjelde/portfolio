@@ -32,15 +32,16 @@ const Skills = React.forwardRef((props, ref) => {
                     <div className={styles.skillsEl_scss}>
                         <SiSass size={55}/>
                         <p>Scss</p>
-                        <div className={styles.skillsEl_javascript}>
-                            <DiJavascript size={55} />
-                            <p>JavaScript</p>
                         </div>
+                    <div className={styles.skillsEl_javascript}>
+                        <DiJavascript size={55} />
+                        <p>JavaScript</p>
                     </div>
+                    <div className={styles.skillsEl_next}><p>Next.js</p></div>
+
                 </div>
+
                 <div className={styles.row}>
-
-
                     <div className={styles.skillsEl_typescript}>
                         <SiTypescript size={55}/>
                         <p>TypeScript</p>
@@ -50,8 +51,11 @@ const Skills = React.forwardRef((props, ref) => {
                         <SiReact size={55}/>
                         <p>React</p>
                     </div>
+
+
                 </div>
-                <p>Next.js</p>
+
+
 
 
             </section>
