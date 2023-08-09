@@ -9,6 +9,7 @@ import Typewriter from "./Components/Typewriter"
 import { useRef } from "react";
 import ButtonToTop from "./Components/ButtonToTop";
 
+import React, {useEffect, useState} from "react"
 
 
 function App() {
@@ -25,6 +26,29 @@ function App() {
     });
   };
 
+  //For til topp-knapp
+  const [isVisible, setIsvisible] = useState(false)
+
+  //Hvis du scroller 100px nedover settes isVisible til å være sann
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 100) {
+        setIsvisible(true)
+      }
+            else {
+              setIsvisible(false)
+            }
+    })
+  }, [])
+
+  //Når funksjonen goTop blir kalt, vil siden gå til toppen (0 pixler)
+  const goTop = () => {
+    window.scrollTo ({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
 
     <div className={"App"}>
@@ -38,7 +62,10 @@ function App() {
       </header>
 
       <main className={"main"}>
-        <ButtonToTop />
+        <button style={{display: isVisible ? 'block' : 'none'}} onClick={goTop}>
+          <ButtonToTop />
+        </button>
+
         <Typewriter />
         <About ref={about}/>
         <Skills ref={skills} />
