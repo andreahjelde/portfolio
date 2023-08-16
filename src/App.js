@@ -32,7 +32,7 @@ function App() {
   //Hvis du scroller 100px nedover settes isVisible til å være sann
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      if(window.scrollY > 100) {
+      if(window.scrollY > 100 && window.innerWidth >= 768) {
         setIsvisible(true)
       }
             else {

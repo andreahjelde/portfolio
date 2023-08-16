@@ -1,60 +1,55 @@
 @import './variables.scss';
 
 .mainContainer{
-
-    width: 25rem;
+   
+    //width: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 10rem;
 
 
     .container1{
 
-        .title1El{}
-    
-        .titleEl{}
+        .titleEl{
+            padding: 1.5rem;
+        }
     
         .bildeProsject{
             width: 85%;
         }
-    
-        .textEl{}
-
-        .btnLive{}
-
-        .btnGithub{}
+        .textEl{
+            padding: 2rem;
+        }
+       
     }
 
 .container2{
-        .title1El{}
-
-        .titleEl{}
-
+        
+    .titleEl{
+        padding: 1.5rem;
+    }
         .bildeProsject{
             width: 85%;
         }
-
-        .textEl{}
-
-        .btnLive{}
-
-        .btnGithub{}
+        .textEl{
+            padding: 2rem;
+        }
+       
     }
 
 .container3{
-        .title1El{}
-
-        .titleEl{}
+    .titleEl{
+        padding: 1.5rem;
+    }
 
         .bildeProsject{
             width: 85%;
         }
-
-        .textEl{}
-
-        .btnLive{}
-
-        .btnGithub{}
+        .textEl{
+            padding: 2rem;
+        }
+        
     }
 
 @media screen and (min-width: map-get($breakpoints, tablet) ) {

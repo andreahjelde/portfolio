@@ -1,37 +1,43 @@
 @import './variables.scss';
 
 .container{
-    height: 100vh;
-    padding-top: 5rem;
+    height: 65vh;
+    padding-top: 10rem;
 
 
     .containerSkills{
         display: flex;
-        flex: 1;
+        //flex: 1;
         justify-content: center;
-        gap: 6rem;
+        gap: 2rem;
+        //gap: 6rem;
         margin-top: 5rem;
 
         .row {
             .skillsEl_html{
                 height: 100px;
+                padding-bottom: 2rem;
             }
 
             .skillsEl_css{
                 height: 100px;
+                padding-bottom: 2rem;
             }
         }
 
         .row {
             .skillsEl_scss{
                 height: 100px;
+                padding-bottom: 2rem;
             }
             .skillsEl_javascript{
                 height: 100px;
+                padding-bottom: 2rem;
             }
 
             .skillsEl_next{
                 height: 100px;
+                padding-bottom: 2rem;
             }
 
         }
@@ -41,9 +47,11 @@
 
             .skillsEl_typescript{
                 height: 100px;
+                padding-bottom: 2rem;
             }
             .skillsEl_react{
                 height: 100px;
+                padding-bottom: 2rem;
             }
 
         }

@@ -1,11 +1,15 @@
 @import './variables.scss';
 
+*{
+  margin: 0;
+}
 
 .App {
   text-align: center;
   display: flex;
   flex-direction: column;
   background-color: white;
+
   
   header{
 
