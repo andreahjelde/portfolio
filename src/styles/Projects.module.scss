@@ -68,7 +68,9 @@
 
 @media screen and (min-width: map-get($breakpoints, tablet) ) {
 
-            width: 45rem;
+            width: 35rem;
+            height: 70rem;
+            
     }
 @media screen and (min-width: map-get($breakpoints, laptop) ) {
             display: flex;
