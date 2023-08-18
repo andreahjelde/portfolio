@@ -21,7 +21,11 @@
         .textEl{
             padding: 2rem;
         }
-       
+        .btn{
+            gap: 2rem;
+            display: flex;
+            justify-content: center;
+        }
     }
 
 .container2{
@@ -36,6 +40,11 @@
             padding: 2rem;
         }
        
+        .btn{
+            gap: 2rem;
+            display: flex;
+            justify-content: center;
+        }
     }
 
 .container3{
@@ -48,6 +57,11 @@
         }
         .textEl{
             padding: 2rem;
+        }
+        .btn{
+            gap: 2rem;
+            display: flex;
+            justify-content: center;
         }
         
     }

@@ -1,0 +1,44 @@
+@import './variables.scss';
+
+.container{
+    width: 7rem;
+    height: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    
+    --c:  #83C2DB; /* the color*/
+    box-shadow: 0 0 0 .1em var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    
+    background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+
+    background-size: 55% calc(var(--_p,0%));
+   
+    transition: background-size .4s, background-position 0s .4s;
+
+
+    &:hover{
+        --_p: 100%;
+        transition: background-position .4s, background-size 0s;
+        
+    }
+
+    &:active{
+        box-shadow: 0 0 9e9q inset $primary-color; 
+        background-color: var(--c);
+        color: #fff;
+}
+  
+}
+
+

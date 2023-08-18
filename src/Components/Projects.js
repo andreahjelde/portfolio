@@ -2,6 +2,7 @@ import styles from '../styles/Projects.module.scss'
 import React from "react"
 import project from '../Images/project.png'
 import Box from '../Components/Box.js'
+import Button from './Button'
 
 const Projects = React.forwardRef((props, ref) => {
 
@@ -16,8 +17,10 @@ const Projects = React.forwardRef((props, ref) => {
                         <img className={styles.bildeProsject} src={project} alt={"project"}/>
                         <p className={styles.textEl}>Dette prosjektet er en nettside som skal vise mine kunnskaper knyttet til programering.
                                         Programmeringssspråk bruk her er Scss og react js.</p>
-                        <button className={styles.btnLive}>Live versjon</button>
-                        <button  className={styles.btnGithub}>Github</button>
+                        <section className={styles.btn}>
+                            <Button className={styles.btnLive}>Live versjon</Button>
+                            <Button  className={styles.btnGithub}>Github</Button>
+                        </section>
                     </div>
 
                 </Box>
@@ -27,8 +30,10 @@ const Projects = React.forwardRef((props, ref) => {
                         <img className={styles.bildeProsject} src={project} alt={"project"}/>
                         <p className={styles.textEl}>Dette prosjektet er en nettside som skal vise mine kunnskaper knyttet til programering.
                             Programmeringssspråk bruk her er Scss og react js.</p>
-                        <button className={styles.btnLive}>Live versjon</button>
-                        <button  className={styles.btnGithub}>Github</button>
+                        <section className={styles.btn}>
+                            <Button className={styles.btnLive}>Live versjon</Button>
+                            <Button  className={styles.btnGithub}>Github</Button>
+                        </section>
                     </div>
 
                 </Box>
@@ -39,8 +44,10 @@ const Projects = React.forwardRef((props, ref) => {
                         <img className={styles.bildeProsject} src={project} alt={"project"}/>
                         <p className={styles.textEl}>Dette prosjektet er en nettside som skal vise mine kunnskaper knyttet til programering.
                             Programmeringssspråk bruk her er Scss og react js.</p>
-                        <button className={styles.btnLive}>Live versjon</button>
-                        <button  className={styles.btnGithub}>Github</button>
+                        <section className={styles.btn}>  
+                            <Button className={styles.btnLive}>Live versjon</Button>
+                            <Button  className={styles.btnGithub}>Github</Button>
+                        </section>
                     </div>
 
                 </Box>
