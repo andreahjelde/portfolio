@@ -2,6 +2,8 @@
 
 .container{
     margin: 4rem;
+   
+  width: 80%;
 
     .title{
         color: black;
@@ -27,15 +29,17 @@
 
         line-height: 1.5rem;
         padding-top: 2rem;
+        width: 15rem;
+        justify-content: center;
 
     }
 
-    @media screen and (min-width: map-get($breakpoints, phone) ) {
-
-
-    }
     @media screen and (min-width: map-get($breakpoints, tablet) ) {
+        .txtAbout{
 
+            width: 40rem;
+     
+         }
 
     }
 
@@ -48,7 +52,12 @@
             justify-content: center;
             height: 30vh;
             gap: 4rem;
-            margin: 10rem;
+            //margin: 10rem;
+            .txtAbout{
+
+               width: 35rem;
+        
+            }
         }
 
     }

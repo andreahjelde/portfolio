@@ -18,6 +18,14 @@
     bottom: 10rem;
     border-style: none;
     
+    @media screen and (min-width: map-get($breakpoints, tablet) ) {
+      left: 92%;
+
+  }
+  @media screen and (min-width: map-get($breakpoints, laptop) ) {
+   left: 94%;
+
+}
 }
 
 .btnToTop:active{background-color: red;}

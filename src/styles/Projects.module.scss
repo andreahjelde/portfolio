@@ -1,25 +1,30 @@
 @import './variables.scss';
 
+
 .mainContainer{
    
-    //width: 25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 95%;
+    min-width: 80%;
+    //justify-content: center;
     padding-top: 10rem;
 
-
-    .container1{
+    .el{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerEl{
 
         .titleEl{
             padding: 1.5rem;
         }
     
         .bildeProsject{
-            width: 85%;
+            min-width: 30%;
+            max-width: 75%;
         }
         .textEl{
             padding: 2rem;
+            min-width: 10%;
         }
         .btn{
             gap: 2rem;
@@ -28,56 +33,30 @@
         }
     }
 
-.container2{
-        
-    .titleEl{
-        padding: 1.5rem;
-    }
-        .bildeProsject{
-            width: 85%;
-        }
-        .textEl{
-            padding: 2rem;
-        }
-       
-        .btn{
-            gap: 2rem;
-            display: flex;
-            justify-content: center;
-        }
-    }
 
-.container3{
-    .titleEl{
-        padding: 1.5rem;
-    }
-
-        .bildeProsject{
-            width: 85%;
-        }
-        .textEl{
-            padding: 2rem;
-        }
-        .btn{
-            gap: 2rem;
-            display: flex;
-            justify-content: center;
-        }
-        
-    }
 
 @media screen and (min-width: map-get($breakpoints, tablet) ) {
 
-            width: 35rem;
+            //width: 40rem;
             height: 70rem;
+            margin-bottom: 30rem;
+            padding-top: 6rem;
+            .bildeProsject{
+                width: 55%;
+            }
+
+           
             
     }
 @media screen and (min-width: map-get($breakpoints, laptop) ) {
-            display: flex;
-            flex-direction: row;
-            width: 60rem;
-            justify-content: space-between;
-            align-content: center;
+           
+            //width: 60rem;
+            height: 50rem;
+            margin-bottom: 5rem;
+            .el{
+                display: flex;
+                flex-direction: row;
+            }
 
     }
 }

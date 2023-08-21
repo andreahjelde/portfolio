@@ -10,9 +10,9 @@ const Projects = React.forwardRef((props, ref) => {
         <div ref={ref} className={styles.mainContainer}>
         <h1 className={styles.title1El}>Mine prosjekter</h1>
 
-            <div>
+            <div className={styles.el}>
                 <Box>
-                    <div className={styles.container1}>
+                    <div className={styles.containerEl}>
                         <h2 className={styles.titleEl}>Prosject 1</h2>
                         <img className={styles.bildeProsject} src={project} alt={"project"}/>
                         <p className={styles.textEl}>Dette prosjektet er en nettside som skal vise mine kunnskaper knyttet til programering.
@@ -25,7 +25,7 @@ const Projects = React.forwardRef((props, ref) => {
 
                 </Box>
                 <Box>
-                    <div className={styles.container2}>
+                    <div className={styles.containerEl}>
                         <h2 className={styles.titleEl}>Prosject 2</h2>
                         <img className={styles.bildeProsject} src={project} alt={"project"}/>
                         <p className={styles.textEl}>Dette prosjektet er en nettside som skal vise mine kunnskaper knyttet til programering.
@@ -39,7 +39,7 @@ const Projects = React.forwardRef((props, ref) => {
                 </Box>
 
                 <Box>
-                    <div className={styles.container3}>
+                    <div className={styles.containerEl}>
                         <h2 className={styles.titleEl}>Prosject 3</h2>
                         <img className={styles.bildeProsject} src={project} alt={"project"}/>
                         <p className={styles.textEl}>Dette prosjektet er en nettside som skal vise mine kunnskaper knyttet til programering.

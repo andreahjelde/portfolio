@@ -4,13 +4,13 @@
 
 .container{
     all:unset;
-    width: 7rem;
+    width: 5rem;
     height: 2rem;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .2rem;
+    padding: .4rem;
     
     --c:  #83C2DB; /* the color*/
     box-shadow: 0 0 0 .1em var(--c); 
@@ -18,7 +18,7 @@
     
     background: 
     var(--_g) calc(var(--_p,0%) - 100%) 0%,
-
+ 
     var(--_g) calc(200% - var(--_p,0%)) 0%,
 
     var(--_g) calc(var(--_p,0%) - 100%) 100%,
@@ -40,8 +40,12 @@
         box-shadow: 0 0 9e9q inset $primary-color; 
         background-color: var(--c);
         color: #fff;
-}
+    }
   
 }
+
+
+
+
 
 

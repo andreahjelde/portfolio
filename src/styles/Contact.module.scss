@@ -3,4 +3,22 @@
 .container{
     height: 50vh;
     padding-top: 10rem;
+    h1{
+        padding-bottom: 1rem;
+    }
+    
+    .text{
+        padding: 1rem;
+    }
+
+    @media screen and (min-width: map-get($breakpoints, tablet) ) {
+        padding-top: 20rem;
+
+    }
+
+    @media screen and (min-width: map-get($breakpoints, laptop) ) {
+
+        padding-top: 10rem;
+
+    }
 }

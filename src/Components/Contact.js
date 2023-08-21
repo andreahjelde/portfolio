@@ -7,9 +7,8 @@ const Contact = React.forwardRef((props, ref) => {
     return(
         <div ref={ref} className={styles.container}>
             <h1>Kontakt meg</h1>
-            <p>Tlf: 415 47 827</p>
-            <p>E-post: andrea.hjelde@gmail.com</p>
-            <p>LinkedIn</p>
+            <p className={styles.text}>Tlf: 415 47 827</p>
+            <p className={styles.text}>E-post: andrea.hjelde@gmail.com</p>
         </div>
     )
 })

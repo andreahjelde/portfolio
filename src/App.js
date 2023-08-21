@@ -5,11 +5,11 @@ import Contact from "./Components/Contact";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import Footer from "./Components/Footer";
-import Typewriter from "./Components/Typewriter"
 import { useRef } from "react";
 import ButtonToTop from "./Components/ButtonToTop";
 
 import React, {useEffect, useState} from "react"
+import Navbar from "./Components/Navbar";
 
 
 function App() {
@@ -53,20 +53,20 @@ function App() {
 
     <div className={"App"}>
       <header className={"header"}>
-        <div className={"container_navbar"}>
+        <Navbar>
+          <div className={"container_navbar"}>
             <button className={"navbarBtn"} onClick={() => scrollToSection(about)}>Om meg</button>
             <button className={"navbarBtn"} onClick={() => scrollToSection(skills)}>Ferdigheter</button>
-          <button className={"navbarBtn"} onClick={() => scrollToSection(projects)}>Prosjekter</button>
-          <button className={"navbarBtn"} onClick={() => scrollToSection(contact)}>Kontakt</button>
-        </div>
+            <button className={"navbarBtn"} onClick={() => scrollToSection(projects)}>Prosjekter</button>
+            <button className={"navbarBtn"} onClick={() => scrollToSection(contact)}>Kontakt</button>
+          </div>
+        </Navbar>
       </header>
 
       <main className={"main"}>
         <button style={{display: isVisible ? 'block' : 'none'}} onClick={goTop}>
           <ButtonToTop />
         </button>
-
-        <Typewriter />
         <About ref={about}/>
         <Skills ref={skills} />
         <Projects ref={projects} />
