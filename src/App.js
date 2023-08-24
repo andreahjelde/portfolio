@@ -12,6 +12,7 @@ import About from "./components/sections/About";
 
 
 
+
 function App() {
 
   const [isVisible, setIsvisible] = useState(false)

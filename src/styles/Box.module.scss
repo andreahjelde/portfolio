@@ -10,4 +10,10 @@
 
  
 
+
+    @media screen and (min-width: map-get($breakpoints, tablet) ) {
+        height: 40rem;
+        
+    }
+
 }

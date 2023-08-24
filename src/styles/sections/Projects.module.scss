@@ -3,27 +3,31 @@
 
 .mainContainer{
     padding-top: 10rem;
+    
 
     .el{
         display: flex;
         flex-direction: column;
     }
+
     .containerEl{
 
-        .titleEl{
-            padding: 1.5rem;
-        }
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+      
     
         .bildeProsject{
             width:  12rem; 
         }
 
-        .textEl{
-            padding: 2rem;
-            line-height: 1.5rem;
-        }
 
         .btn{
+            
+            padding: .5rem;
             gap: 2rem;
             display: flex;
             justify-content: center;
@@ -33,9 +37,9 @@
 
 
 @media screen and (min-width: map-get($breakpoints, tablet) ) {
-            margin-bottom: 30rem;
+            margin-bottom: 5rem;
             padding-top: 6rem;
-     
+    
             .containerEl{
                 .bildeProsject{
                     width:  30rem;
@@ -51,6 +55,7 @@
                 flex-direction: row;
             }
             .containerEl{
+                padding: .5rem;
                 .bildeProsject{
                     width:  15rem;
                 
