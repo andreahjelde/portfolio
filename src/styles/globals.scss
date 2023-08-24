@@ -1,0 +1,75 @@
+@import './variables.scss';
+
+*{
+  font-family: 'roboto';
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: $line-height;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+html, body {
+  overflow-x: hidden;
+ 
+ 
+}
+
+
+
+ 
+@media screen and (min-width: map-get($breakpoints, phone) ) {
+  h1{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+  p{
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+
+@media screen and (min-width: map-get($breakpoints, tablet) ) {
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  
+  p{
+    font-size: 1rem;
+  }
+  
+
+}
+
+@media screen and (min-width: map-get($breakpoints, laptop) ) {
+
+  h1{
+    font-size: 2.3rem;
+  }
+  
+  h2{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1.1rem;
+  }
+  
+
+}

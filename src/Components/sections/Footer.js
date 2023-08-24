@@ -1,4 +1,4 @@
-import styles from '../styles/Footer.module.scss'
+import styles from '../../styles/sections/Footer.module.scss'
 import React from "react"
 import {GoMarkGithub} from "@react-icons/all-files/go/GoMarkGithub";
 import {AiFillLinkedin} from "@react-icons/all-files/ai/AiFillLinkedin";

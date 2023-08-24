@@ -1,0 +1,22 @@
+@import './variables.scss';
+@import './globals.scss';
+
+.hamburger{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
+    
+
+      .burger{
+        width: 2rem;
+        height: 0.25rem;
+        background: black;
+        border-radius: 10px;
+        transition: all 0.3s linear;
+        transform-origin: 1px;
+      }
+}
+

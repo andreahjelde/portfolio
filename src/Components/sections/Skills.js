@@ -1,4 +1,4 @@
-import styles from '../styles/Skills.module.scss'
+import styles from '../../styles/sections/Skills.module.scss'
 import React from "react"
 import {AiFillHtml5} from "@react-icons/all-files/ai/AiFillHtml5";
 import {SiCss3} from "@react-icons/all-files/si/SiCss3";

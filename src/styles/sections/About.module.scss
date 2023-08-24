@@ -1,0 +1,62 @@
+@import '../variables.scss';
+@import '../globals.scss';
+.container{
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title{
+        //color: black;
+        //padding-bottom: 2rem;
+        //padding-top: 10rem;
+    }
+    .containerElements{
+        //justify-content: center;
+        //align-items: center;
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        align-items: center;
+        .imagePerson{
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .txtAbout{
+            padding-top: 2rem;
+        }
+
+    }
+    
+    @media screen and (min-width: map-get($breakpoints, tablet) ) {
+        .title{ 
+            //padding-top: 2rem;
+        }
+        .containerElements{
+            .imagePerson{
+            width: 15rem;
+            height: 15rem;
+            }
+        }
+        
+    }
+
+    @media screen and (min-width: map-get($breakpoints, laptop) ) {
+
+        .containerElements{
+            display: flex;
+            flex-direction: row;
+            //align-content: center;
+            justify-content: center;
+            gap: 4rem;
+            margin-left: 2rem;
+            margin-right: 2rem;            
+        }
+
+    }
+
+}

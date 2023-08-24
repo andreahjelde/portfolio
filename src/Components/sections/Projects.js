@@ -1,8 +1,8 @@
-import styles from '../styles/Projects.module.scss'
+import styles from '../../styles/sections/Projects.module.scss'
 import React from "react"
-import project from '../Images/project.png'
-import Box from '../Components/Box.js'
-import Button from './Button'
+import project from '../../Images/project.png'
+import Box from '../Box.js'
+import Button from '../Button'
 
 const Projects = React.forwardRef((props, ref) => {
 

@@ -1,0 +1,54 @@
+@import '../variables.scss';
+@import '../globals.scss';
+.navigation{
+  margin-top: 2rem;
+    width: 100%;
+    height: 15vh;
+
+    .ul {
+        
+      display: flex;
+      flex-direction: row;
+      //gap: 2rem;
+      justify-content: center;
+      align-content: center;
+      
+      width: 100%;
+      height: 15vh;
+      flex-wrap: wrap;
+        
+        .li {
+            list-style-type: none;
+            padding-right: 10px;
+        }
+    }
+    
+
+    //hamburger-meny skal kun vises når skjermen er iphone, 
+    //ellers skal innholdet i menyen vises øverst på skjermen 
+    //(altså innholdet til ul)
+    
+    .hamburger{
+        display: none;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, tablet) ) {
+       
+    .navigation{
+
+        .ul{
+            display: flex;
+            flex-wrap: wrap;
+            left: 50;
+        }
+          .hamburger{
+            display: fixed;
+            padding-top: 10px;
+            margin-left: 10px;
+            z-index: 10;
+        
+        }
+    }
+}
+} 
+

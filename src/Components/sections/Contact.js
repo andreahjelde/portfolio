@@ -1,4 +1,4 @@
-import styles from '../styles/Contact.module.scss'
+import styles from '../../styles/sections/Contact.module.scss'
 import React from "react"
 
 //Legg til et input-felt slik at noen kan sende en melding til mai direkte fra siden

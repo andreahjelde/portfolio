@@ -1,33 +1,23 @@
 
-import "./styles/App.scss";
-import About from "./Components/About";
-import Contact from "./Components/Contact";
-import Projects from "./Components/Projects";
-import Skills from "./Components/Skills";
-import Footer from "./Components/Footer";
-import { useRef } from "react";
-import ButtonToTop from "./Components/ButtonToTop";
+
+import Contact from "./components/sections/Contact";
+import Projects from "./components/sections/Projects";
+import Skills from "./components/sections/Skills";
+import Footer from "./components/sections/Footer";
+import ButtonToTop from "./components/ButtonToTop";
 
 import React, {useEffect, useState} from "react"
-import Navbar from "./Components/Navbar";
+import Navbar from "./components/sections/Navbar";
+import About from "./components/sections/About";
+
 
 
 function App() {
 
-  const about = useRef(null);
-  const skills = useRef(null);
-  const projects = useRef(null);
-  const contact = useRef(null)
-
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
-
-  //For til topp-knapp
   const [isVisible, setIsvisible] = useState(false)
+
+
+
 
   //Hvis du scroller 100px nedover settes isVisible til å være sann
   useEffect(() => {
@@ -53,28 +43,21 @@ function App() {
 
     <div className={"App"}>
       <header className={"header"}>
-        <Navbar>
-          <div className={"container_navbar"}>
-            <button className={"navbarBtn"} onClick={() => scrollToSection(about)}>Om meg</button>
-            <button className={"navbarBtn"} onClick={() => scrollToSection(skills)}>Ferdigheter</button>
-            <button className={"navbarBtn"} onClick={() => scrollToSection(projects)}>Prosjekter</button>
-            <button className={"navbarBtn"} onClick={() => scrollToSection(contact)}>Kontakt</button>
-          </div>
-        </Navbar>
+        <Navbar />
       </header>
 
+      
       <main className={"main"}>
-        <button style={{display: isVisible ? 'block' : 'none'}} onClick={goTop}>
+        <div style={{display: isVisible ? 'block' : 'none'}} onClick={goTop}>
           <ButtonToTop />
-        </button>
-        <About ref={about}/>
-        <Skills ref={skills} />
-        <Projects ref={projects} />
-        <Contact ref={contact}/>
+        </div>
+        <About />
+        <Skills  />
+        <Projects  />
+        <Contact />
       </main>
 
-        <Footer />
-
+      <Footer />
     </div>
   );
 }

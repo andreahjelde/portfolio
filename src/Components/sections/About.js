@@ -1,14 +1,14 @@
-import styles from '../styles/About.module.scss'
-import img from '../Images/meg.jpeg'
+import styles from '../../styles/sections/About.module.scss'
+import img from '../../Images/meg.jpeg'
 import React from "react"
 
 
 
-const About = React.forwardRef((props, ref) => {
+const About = () => {
     return (
-        <div ref={ref} className={styles.container}>
+        <div className={styles.container}>
             <h1 className={styles.title}>Om meg</h1>
-            <div className={styles.ContainerElements}>
+            <div className={styles.containerElements}>
                 <img className={styles.imagePerson} src={img} alt={"person"}></img >
                 <p className={styles.txtAbout}>Hei! Jeg heter Andrea Hjelde, og er en 26 år gammel kvinne.
                     For 2 år siden begynte jeg på OsloMet sitt bachelorporgram "Anvendt datateknologi". Under dette studiet har jeg utviklet en stor interesse for webutvikling, og noe jeg synes er veldig gøy å jobe med.
@@ -22,6 +22,6 @@ const About = React.forwardRef((props, ref) => {
 
         )
 
-})
+}
 
 export default About;
